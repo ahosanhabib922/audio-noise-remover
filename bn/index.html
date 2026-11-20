@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audio Noise Remover – ভয়েস রেকর্ডিং থেকে নয়েজ দূর করার অ্যাপ</title>
+<meta name="description" content="অ্যান্ড্রয়েড অ্যাপ যা ভয়েস মেমো, লেকচার, ইন্টারভিউ আর পডকাস্ট থেকে ব্যাকগ্রাউন্ড নয়েজ, হাম ও হিস সরায়। অফলাইনে কাজ করে, অডিও ফোনের বাইরে যায় না।">
+<link rel="canonical" href="https://ahosanhabib922.github.io/audio-noise-remover/bn/">
+<link rel="alternate" hreflang="en" href="https://ahosanhabib922.github.io/audio-noise-remover/">
+<link rel="alternate" hreflang="bn" href="https://ahosanhabib922.github.io/audio-noise-remover/bn/">
+<link rel="alternate" hreflang="x-default" href="https://ahosanhabib922.github.io/audio-noise-remover/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Audio Noise Remover">
+<meta property="og:title" content="Audio Noise Remover – ভয়েস রেকর্ডিং থেকে নয়েজ দূর করার অ্যাপ">
+<meta property="og:description" content="অ্যান্ড্রয়েড অ্যাপ যা ভয়েস মেমো, লেকচার, ইন্টারভিউ আর পডকাস্ট থেকে ব্যাকগ্রাউন্ড নয়েজ, হাম ও হিস সরায়। অফলাইনে কাজ করে, অডিও ফোনের বাইরে যায় না।">
+<meta property="og:url" content="https://ahosanhabib922.github.io/audio-noise-remover/bn/">
+<meta property="og:image" content="https://ahosanhabib922.github.io/audio-noise-remover/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Audio Noise Remover",
+  "description": "অ্যান্ড্রয়েড অ্যাপ যা ভয়েস রেকর্ডিং থেকে ব্যাকগ্রাউন্ড নয়েজ সরায় এবং সম্পাদনা করে, পুরোটাই ডিভাইসে।",
+  "url": "https://ahosanhabib922.github.io/audio-noise-remover/bn/",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.ochinpur.noise_remover",
+  "operatingSystem": "Android 8.0 and up",
+  "applicationCategory": "MultimediaApplication",
+  "inLanguage": "bn",
+  "offers": { "@type": "Offer", "price": 0, "priceCurrency": "USD" },
+  "author": { "@type": "Organization", "name": "Ochinpur" }
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23101010'/%3E%3Cpath d='M16 7a3.2 3.2 0 0 1 3.2 3.2v5.4a3.2 3.2 0 0 1-6.4 0v-5.4A3.2 3.2 0 0 1 16 7z' fill='%23FFD25F'/%3E%3Cpath d='M10 15.2a6 6 0 0 0 12 0M16 21.2V25M12.6 25h6.8' stroke='%23FFD25F' stroke-width='2.1' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 64px 20px 96px;
+    background: #101010; color: #d4d4d4;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  a { color: #ffd25f; }
+  h1 { font-size: 40px; line-height: 1.1; margin: 0 0 12px; color: #fff; letter-spacing: -0.03em; }
+  .lede { font-size: 18px; color: #b9b9b9; margin: 0 0 40px; }
+  h2 { font-size: 19px; margin: 40px 0 12px; color: #fff; }
+  ul { padding-left: 20px; }
+  li { margin: 8px 0; color: #b9b9b9; }
+  strong { color: #d4d4d4; }
+  .card {
+    border: 1px solid #201f1f; border-radius: 16px; padding: 18px 20px;
+    background: rgba(255,255,255,0.03); margin: 24px 0;
+  }
+  .card p { margin: 0; color: #b9b9b9; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid #201f1f; color: #777; font-size: 14px; }
+  footer a { margin-right: 16px; }
+  footer .by { margin: 14px 0 0; color: #777; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid #201f1f; vertical-align: top; }
+  th { color: #d4d4d4; font-weight: 600; width: 38%; }
+  td { color: #b9b9b9; }
+  h3 { font-size: 16px; margin: 26px 0 6px; color: #fff; }
+  p { color: #b9b9b9; }
+  .cta { display: inline-block; margin: 0 0 8px; padding: 14px 26px; border-radius: 100px; background: #ffd25f;
+         color: #332916; font-weight: 700; text-decoration: none; }
+  .lang { float: right; font-size: 14px; }
+  .meta { color: #777; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+
+<a class="lang" href="../" hreflang="en" lang="en">English</a>
+<h1>Audio Noise Remover</h1>
+<p class="lede">Audio Noise Remover একটি অ্যান্ড্রয়েড অ্যাপ, যা ভয়েস রেকর্ডিং থেকে ব্যাকগ্রাউন্ড নয়েজ সরায় এবং
+রেকর্ডিং সম্পাদনা করতে দেয়, পুরোটাই আপনার ফোনে। কিছুই আপলোড হয় না, কোনো অ্যাকাউন্টও লাগে না।</p>
+
+<p><a class="cta" href="https://play.google.com/store/apps/details?id=com.ochinpur.noise_remover">Google Play থেকে নিন</a></p>
+<p class="meta">Ochinpur-এর তৈরি · সর্বশেষ হালনাগাদ ২০ নভেম্বর ২০২৬</p>
+
+<h2>অ্যাপটি যা করে</h2>
+<ul>
+  <li><strong>রেকর্ড বা ইমপোর্ট</strong> করুন ভয়েস মেমো, লেকচার, ইন্টারভিউ, পডকাস্ট বা যেকোনো অডিও ফাইল।</li>
+  <li><strong>ব্যাকগ্রাউন্ড নয়েজ সরান</strong>: রেকর্ডিংয়ের নীরব অংশ থেকে ঘরের শব্দ চিনে নিয়ে হিস, হাম আর ফ্যানের আওয়াজ কমায়, কণ্ঠ অক্ষত থাকে।</li>
+  <li><strong>কণ্ঠ আরও পরিষ্কার করুন</strong> কম্প্রেশন, লিমিটার, EQ, পিচ, ইকো ও রিভার্ব দিয়ে; প্রতিটিতে আগে-পরে শুনে নেওয়ার সুযোগ আছে।</li>
+  <li><strong>সম্পাদনা করুন</strong>: ট্রিম, স্প্লিট, ফেড, নীরবতা বাদ দেওয়া, গতি বদলানো বা উল্টো করা।</li>
+  <li><strong>সেভ বা শেয়ার</strong> করুন WAV ফাইল হিসেবে, Music ফোল্ডারে বা সরাসরি অন্য অ্যাপে।</li>
+</ul>
+
+<h2>এক নজরে</h2>
+<table>
+  <tr><th>প্ল্যাটফর্ম</th><td>অ্যান্ড্রয়েড ৮.০ ও তার পরের সংস্করণ</td></tr>
+  <tr><th>অডিও কোথায় প্রসেস হয়</th><td>ডিভাইসেই। অ্যাপের কোনো সার্ভার নেই, আপলোডের কোনো পথও নেই।</td></tr>
+  <tr><th>অফলাইনে চলে</th><td>হ্যাঁ, সব ইফেক্ট ও সম্পাদনার টুল</td></tr>
+  <tr><th>যে ফাইল খোলে</th><td>M4A, MP3, WAV, OGG ও FLAC</td></tr>
+  <tr><th>যে ফাইল সেভ করে</th><td>WAV</td></tr>
+  <tr><th>সর্বোচ্চ দৈর্ঘ্য</th><td>১০ মিনিট</td></tr>
+  <tr><th>অ্যাকাউন্ট লাগে</th><td>না</td></tr>
+  <tr><th>দাম</th><td>বিজ্ঞাপনসহ বিনামূল্যে। Premium বিজ্ঞাপন সরায় ও বাড়তি টুল খুলে দেয়।</td></tr>
+</table>
+
+<h2>যে প্রশ্নগুলো মানুষ করে</h2>
+
+<h3>অ্যান্ড্রয়েডে ভয়েস রেকর্ডিং থেকে ব্যাকগ্রাউন্ড নয়েজ কীভাবে সরাব?</h3>
+<p>রেকর্ডিংটি Audio Noise Remover-এ খুলুন, Noise-এ চাপ দিন, মাত্রা ঠিক করে প্রিভিউ শুনুন। ঠিক লাগলে প্রয়োগ করে
+সেভ করুন। পুরো কাজটি ফোনেই হয়, সাধারণ ভয়েস মেমোর জন্য কয়েক সেকেন্ড লাগে।</p>
+
+<h3>ইন্টারনেট ছাড়া কি চলে?</h3>
+<p>হ্যাঁ। নয়েজ কমানো, সব ইফেক্ট আর সম্পাদনার টুল ডিভাইসেই চলে, তাই ফ্লাইট মোডেও কাজ করে। ইন্টারনেট লাগে শুধু
+ফ্রি সংস্করণের বিজ্ঞাপন আর Premium কেনার জন্য।</p>
+
+<h3>আমার অডিও কি কোথাও আপলোড হয়?</h3>
+<p>না। অ্যাপে এমন কোনো কোড নেই যা অডিও ফোনের বাইরে পাঠায়, আর তা গ্রহণ করার মতো কোনো সার্ভারও নেই। আপনি
+নিজে সেভ বা শেয়ার না করা পর্যন্ত রেকর্ডিং অ্যাপের নিজস্ব স্টোরেজেই থাকে।</p>
+
+<h3>কোন ধরনের নয়েজ সরাতে পারে?</h3>
+<p>একটানা ব্যাকগ্রাউন্ড শব্দ: হিস, হাম, ফ্যান, এসি, রাস্তার গুঞ্জন। অ্যাপটি কথার জন্য বানানো, তাই ভয়েস মেমো,
+লেকচার, ইন্টারভিউ, মিটিং আর পডকাস্টে সবচেয়ে ভালো কাজ করে। দরজা বন্ধের মতো আকস্মিক শব্দ বা অন্য কারো কথা সরায় না।</p>
+
+<h3>অ্যাপটি কি ফ্রি?</h3>
+<p>অ্যাপটি বিজ্ঞাপনসহ বিনামূল্যে ব্যবহার করা যায়। ফ্রি সংস্করণে রেকর্ডিং, ইমপোর্ট, ম্যানুয়াল নিয়ন্ত্রণসহ সব ইফেক্ট
+এবং Trim, Split ও Reverse টুল আছে। Premium সব বিজ্ঞাপন সরায় এবং নামযুক্ত প্রিসেট, Fade, Silence ও Speed টুল
+আর স্বয়ংক্রিয় এনহান্সমেন্ট যোগ করে। Premium মাসিক বা বার্ষিক সাবস্ক্রিপশন, অথবা এককালীন লাইফটাইম কেনা।</p>
+
+<h2>সহায়তা</h2>
+<p>প্রশ্ন, বাগ রিপোর্ট বা ফিচারের অনুরোধ পাঠান <strong>support@ochinpur.com</strong> ঠিকানায়।</p>
+
+<footer>
+  <a href="../privacy.html">Privacy Policy</a>
+  <a href="../terms.html">Terms of Service</a>
+  <a href="https://play.google.com/store/apps/details?id=com.ochinpur.noise_remover">Google Play</a>
+  <p class="by">Ochinpur-এর একটি অ্যাপ</p>
+</footer>
+
+</main>
+</body>
+</html>
